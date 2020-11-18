@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>http://localhost:60417/images/kelly-sikkema-raaOq1ZZgnc-unsplash.jpg</ImageUrl>
+    <NavigateUrl>http://www.google.com/</NavigateUrl>
+    <AlternateText>ASP.NET Logo</AlternateText>
+    <Keyword>A</Keyword>
+    <Impressions>Web Site</Impressions>
+    <Caption>This is the caption for Ad#1</Caption>
+  </Ad>
+  <Ad>
+    <ImageUrl>http://localhost:60417/images/markus-spiske-k-o-Icw5J80-unsplash.jpg</ImageUrl>
+    <NavigateUrl>http://www.youtube.com/</NavigateUrl>
+    <AlternateText>teesting test</AlternateText>
+    <Keyword>S</Keyword>
+    <Impressions>Web Site</Impressions>
+    <Caption>This is the caption for Ad#2</Caption>
+  </Ad>
+  <Ad>
+    <ImageUrl>http://localhost:60417/images/kendal-L4iKccAChOc-unsplash.jpg</ImageUrl>
+    <NavigateUrl>http://www.facebook.com/</NavigateUrl>
+    <AlternateText>www.neostream.net</AlternateText>
+    <Keyword>S</Keyword>
+    <Impressions>Web Site</Impressions>
+    <Caption>This is the caption for Ad#3</Caption>
+  </Ad>
+</Advertisements>

@@ -1,0 +1,172 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="MasterPage2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style type="text/css">
+
+        body {
+}
+*{
+    margin:0px;
+    padding:0px;
+}
+#menu ul {
+    list-style:none;align-content:center;
+    margin-right:0px;
+}
+#menu ul li{
+    background-color:white;
+    border:solid 1px white;
+    width:130px;
+    height:35px;
+    text-align:center;
+    line-height:35px;
+    float:right;
+    position:relative;
+    border-radius:0px;
+ 
+
+}
+#menu ul li a{
+    text-decoration:none;
+    color:black;
+    display:block;
+}
+#menu ul li a:hover{
+    background-color:deepskyblue;
+    color:white;
+    border-radius:0px;
+}
+#menu ul ul {
+    position:absolute;
+    display:none;
+}
+#menu ul li > ul li {
+    background-color:white;
+    color:white;
+    border:solid 1px white;
+    border-radius:0px;
+}
+#menu ul li:hover > ul {
+    display:block;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height:inherit;
+  background-color: darkblue;
+  color: white;
+  text-align: center;
+}
+
+        .auto1 {
+            height: 40px;
+        }
+        .auto3 {
+            font-family: "Times New Roman", Times, serif;
+            color: #FFFFFF;
+        }
+        .auto4 {
+            color: #FFFFFF;
+             margin-left: 160px;
+         }
+        .auto5 {
+             margin-left: 160px;
+         }
+         .auto6 {
+             font-family: "Times New Roman", Times, serif;
+             color: #FFFFFF;
+             margin-left: 160px;
+         }
+        .image1 {
+            width: 92px;
+            height: 51px;
+        }
+        .image {
+            width: 46px;
+        }
+        .div{
+            margin-top:0auto;
+        }
+        </style>
+</head>
+<body style="background-image: url('http://localhost:60417/home.jpg')">
+    <form id="form1" runat="server">
+        <table style="border-style: none; width:100%; margin:0auto";class="auto7">
+
+
+            <tr style="border-style: none; width:1100px; background-color:white">
+                <td class="image" colspan="1" style="border-style: none">
+                    <img src="logo4.jpg" class="image1" border="0" /></td>
+                <td colspan="3" class="auto1" style="border-style: none">
+             <div id="menu">  
+                 <ul>
+            <li><a href="ContactUs.aspx" >Contact Us</a>
+                <ul></ul>
+            </li>
+                  
+            <li><a href="#" >About Us</a>
+               <ul>
+                 
+              </ul></li>
+          
+            <li>
+             <a href="Home2.aspx" >Home</a>
+                </li>
+             </ul>  
+    </div>
+                </td>
+            </tr>
+        </table>
+      <table>
+            <tr>
+                <td>
+                <div>
+        
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <h1 class="auto5"> <span class="auto3"><strong>Medical Services</strong></span></h1>
+            <h1 class="auto6"> <strong>That You Can Trust</strong></h1>
+            <p class="auto4"> If you are looking at blank cassettes on the web,</p>
+            <p class="auto4"> you may be very confused at the difference in price </p>
+            <p class="auto4"> You may see some for as low as each.</p>
+
+                 <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                    
+                </div>
+                </td>
+                 <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                <td>
+
+                </td>
+
+
+                </tr>
+
+   </table>
+        <div class="footer">
+            <p>Copyright &copy 2020</p>
+        </div>
+    </form>
+</body>
+</html>

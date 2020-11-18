@@ -1,0 +1,180 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+     <style type="text/css">
+*{
+    margin:0px;
+    padding:0px;
+}
+#menu ul {
+    list-style:none;align-content:center;
+    margin-right:0px;
+}
+#menu ul li{
+    background-color:white;
+    border:solid 1px white;
+    width:130px;
+    height:35px;
+    text-align:center;
+    line-height:35px;
+    float:left;
+    position:relative;
+    border-radius:0px;
+ 
+
+}
+#menu ul li a{
+    text-decoration:none;
+    color:black;
+    display:block;
+}
+#menu ul li a:hover{
+    background-color:deepskyblue;
+    color:white;
+    border-radius:0px;
+}
+#menu ul ul {
+    position:absolute;
+    display:none;
+}
+#menu ul li > ul li {
+    background-color:white;
+    color:white;
+    border:solid 1px white;
+    border-radius:0px;
+}
+#menu ul li:hover > ul {
+    display:block;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: darkblue;
+  color: white;
+  text-align: center;
+}
+        .auto1 {
+            height: 24px;
+        }
+
+        .auto2 {
+            width: 100%;
+        }
+        .auto3 {
+            height: 40px;
+        }
+        .auto4 {
+            font-size: xx-large;
+
+        }
+         .auto5 {
+             height: 90px;
+             width: 113px;
+             margin-top: 0px;
+         }
+         .auto6 {
+             width: 123px;
+             height: 107px;
+         }
+         .auto7 {
+             width: 1276px;
+             height: 169px;
+         }
+         .auto8 {
+             width: 100%;
+             text-align: center;
+         }
+         .auto10 {
+             text-align: inherit;
+         }
+         .auto9 {
+             color: #FFFFFF;
+         }
+         .aut1 {
+             text-align: right;
+         }
+         .auto-style1 {
+             color: #FFFFFF;
+             font-size: medium;
+         }
+    </style>
+</head>
+<body style="background-image: url(' http://localhost:60417/ps1.jpg'); ">
+    <form id="form1" runat="server">
+        <div style="background-image: url('http://localhost:60417/b11.jpg')">
+        <table style="width:100% ;margin:0 auto";class="auto7">
+            <tr style="width:1100px;height:50px;background-color:none">
+                <td style="width:60px;height:50px"> <img src="logo4.jpg" class="auto6" />
+                    </td>
+                <td class="auto8">
+                    &nbsp;<span class="">&nbsp; </span>
+                    <asp:Label ID="Label1" runat="server" Font-Size="XX-Large" font-family=" Arial, Helvetica, sans-serif" ForeColor="White" Text="MEDICAL STORE" Align="center" CssClass="auto4" Font-Bold="True" Font-Italic="False"></asp:Label>
+                     <div class="aut1">
+                        <asp:Label ID="Label2" runat="server" Text="Label" CssClass="auto9" ForeColor="Black" Font-Size="Medium"></asp:Label><br />
+                        <asp:Label ID="Label3" runat="server" Text="Label" CssClass="auto-style1" ForeColor="Black" Font-Size="Medium"></asp:Label>
+                    </div>
+                      </td>
+            </tr>
+            <tr style="width:1100px;background-color:white;">
+                <td colspan="2" class="auto3">
+             <div id="menu">  
+                 <ul>
+            <li><a href="Home.aspx" >Home</a>
+                <ul></ul>
+            </li>
+                  
+            <li><a href="#" >Stock</a>
+               <ul>
+                  <li><a href="addstock1.aspx" >New Stock</a></li>
+                  <li><a href="updatestock.aspx" >Update Stock</a></li>
+                   <li><a href="deletestock.aspx" >Delete Stock</a></li>
+                   <li><a href="viewstock.aspx" >View Stock</a>
+                   </li>
+              </ul>
+            </li>
+            
+            <li><a href="#" >Client</a>
+                <ul>
+                    <li><a href="addclient.aspx" >Add New</a></li>
+                    <li><a href="deleteclient.aspx" >Delete</a></li> 
+                    <li><a href="viewclient.aspx" >View</a></li>  
+                </ul>
+                </li>
+                <li><a href="#">Company</a>
+                 <ul>
+                    <li><a href="addcompany.aspx" >Add New</a></li>
+                    <li><a href="deletecompany.aspx" >Remove</a></li> 
+                    <li><a href="viewcompany.aspx" >View</a></li>  
+                </ul>
+            </li>
+          
+            <li>
+                <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Logout</asp:LinkButton>
+                </li>
+             </ul>  
+    </div>
+                </td>
+            </tr>
+            </table>
+            </div>
+        <div class="content">
+             <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div>
+        <div class="footer">
+            <p>Copyright &copy 2020</p>
+        </div>
+           
+    </form>
+</body>
+</html>
